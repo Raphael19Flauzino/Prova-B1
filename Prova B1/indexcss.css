@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #792642;
+    padding: 20px;
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centraliza os itens no container */
+}
+
+nav ul li {
+    height: 30px;  
+    margin: 0; /* Remove a margem */
+    padding: 10px; /* Ajuste para evitar muito espaço */
+    display: flex; /* Faz com que o item se comporte como um container flexível */
+    justify-content: center; /* Centraliza o conteúdo dentro do item */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px; /* Ajuste para manter a consistência */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Para permitir que o header fique no topo */
+    margin: 0;
+    height: 100vh; /* Garante que ocupe toda a altura da viewport */
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    height: 100px; /* Ajuste conforme necessário */
+}
+
+.conteudo {
+    display: flex; /* Para a divisão em texto e imagens */
+    flex: 1; /* Para ocupar o restante da altura */
+}
+
+.texto {
+    flex: 1; /* 50% da largura */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Para empilhar h1 e p */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+.texto h1 {
+    margin-bottom: 10px; /* Espaço entre h1 e p */
+}
+.imagens {
+    flex: 1; /* 50% da largura */
+    display: grid; /* Usa grid para as imagens */
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas */
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 20px; /* Padding para a seção de imagens */
+}
+
+.imagem {
+    height: 150px; /* Altura fixa para as imagens */
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    background-color: #792642;
+    color:white;
+}
+
+#Banner {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:250;
+}
